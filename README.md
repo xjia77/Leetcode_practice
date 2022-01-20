@@ -1,8 +1,8 @@
-# Leetcode_practice
+## Leetcode_practice
 Toady, my leetcode career is start.
 
-1 Two Sum
-`
+## Two Sum
+```
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         for(int i=0;i<nums.length;i++){
@@ -15,4 +15,4 @@ class Solution {
     }
 }
 //时间复杂度 O(N^2)，空间复杂度 O(1)
-`
+```
