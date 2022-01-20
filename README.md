@@ -1,2 +1,2 @@
 # Leetcode_practice
-Toady, my leetcode career is open.
+Toady, my leetcode career is start.
