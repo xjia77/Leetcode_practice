@@ -47,3 +47,19 @@ class Solution {
 }
 //时间复杂度 ，空间复杂度 
 ```
+## 104 Maximum Depth of Binary Tree
+```
+class Solution {
+    public int maxDepth(TreeNode root) {
+        if(root == null){
+            return 0;
+        }
+        int leftmax = maxDepth(root.left);
+        int rightmax = maxDepth(root.right);
+        int res = Math.max(leftmax , rightmax);
+        res = res + 1;
+        return res;
+    }
+}
+//时间复杂度 O(N)，空间复杂度 O(logN)
+```
