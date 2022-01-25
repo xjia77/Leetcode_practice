@@ -63,3 +63,22 @@ class Solution {
 }
 //时间复杂度 O(N)，空间复杂度 O(logN)
 ```
+## 144 Binary Tree Preorder Traversal
+```
+class Solution {
+    List <Integer> res = new LinkedList<>();
+    public List<Integer> preorderTraversal(TreeNode root) {
+        transerve(root);
+        return res;
+    }
+    void transerve(TreeNode root){
+        if(root == null){
+            return ;
+        }
+        res.add(root.val);
+        transerve(root.left);
+        transerve(root.right);
+    }
+}
+//时间复杂度 O()，空间复杂度 O()
+```
