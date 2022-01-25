@@ -82,3 +82,19 @@ class Solution {
 }
 //时间复杂度 O()，空间复杂度 O()
 ```
+## 144 Binary Tree Preorder Traversal (second method)
+```
+class Solution {
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List <Integer> res = new LinkedList<>();
+        if(root == null){
+            return res;
+        }
+    res.add(root.val);
+    res.addAll(preorderTraversal(root.left));
+    res.addAll(preorderTraversal(root.right));
+    return res;
+    }
+}
+//时间复杂度 O(N^2)，空间复杂度 O()
+```
